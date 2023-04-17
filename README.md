@@ -77,3 +77,6 @@ browser: true,
 es2021: true,
 jest: true //추가
 ```
+
+4. `.eslintignore` 파일을 생성합니다.  
+`.gitignore` 파일과 같은 내용을 입력합니다.
