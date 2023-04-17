@@ -43,7 +43,7 @@ npm init -y //-y는 yes의 의미
 ## .gitignore 파일 생성하기
 git에 업로드 되지 않아야 하는 파일입니다.  
 최소한 /node_modules/, /dist/ 는 포함해야 합니다.  
-***
+
 `.gitignore` 파일을 생성합니다.
 ```
 touch .gitignore
