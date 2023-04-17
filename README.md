@@ -80,3 +80,25 @@ jest: true //추가
 
 4. `.eslintignore` 파일을 생성합니다.  
 `.gitignore` 파일과 같은 내용을 입력합니다.
+
+
+## React 설치하기
+```
+npm i react react-dom
+npm i -D @types/react @types/react-dom
+```
+
+
+## Jest 설치하기
+1. Jest를 설치합니다.
+```
+npm i -D jest @types/jest @swc/core @swc/jest
+jest-environment-jsdom
+@testing-library/react @testing-library/jest-dom
+```
+
+2. SWC로 빌드하기 위해 `jest.config.js` 파일을 생성합니다.
+```
+touch jest.config.js
+```
+
