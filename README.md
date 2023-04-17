@@ -33,7 +33,7 @@ cd my-app
 
 
 ## npm 패키지 준비하기  
-npm 패키지를 설치하는 두 개의 명령어가 있습니다.
+npm 패키지를 설치하는 두 가지의 명령어가 있습니다.
 * 기본 명령어입니다. 세부 설정을 해야 합니다.
 ```
 npm init
@@ -42,7 +42,7 @@ npm init
 ```
 npm init -y //-y는 yes의 의미
 ```
-`package.json` 파일이 생성 됩니다.
+설치가 완료 되면 `package.json` 파일이 생성 됩니다.
 
 
 ## .gitignore 파일 생성하기
