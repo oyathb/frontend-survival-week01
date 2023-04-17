@@ -28,13 +28,12 @@ npm init -y //default값으로 바로 package.json 생성하겠다
 ```
 
 ## .gitingore 파일 생성하기
-git에 업로드 되지 않아야 하는 파일입니다.
+git에 업로드 되지 않아야 하는 파일입니다.  
 최소한 node_modules, dist 는 포함해야 합니다.  
 `.gitignore` 파일을 생성합니다.
 ```
 touch .gitignore
 ```
-`.gitignore` 파일 
 
 
 ## TypeScript 설정하기
@@ -83,6 +82,7 @@ jest: true //추가
 
 
 ## React 설치하기
+React를 설치합니다.
 ```
 npm i react react-dom
 npm i -D @types/react @types/react-dom
@@ -102,3 +102,24 @@ jest-environment-jsdom
 touch jest.config.js
 ```
 
+
+## Parcel 설치하기
+Parcel을 설치합니다.
+```
+npm i -D parcel
+```
+
+
+## package.json 파일 수정하기
+`package.json` 파일을 수정합니다.
+```
+"scripts": {
+    "start": "parcel --port 8080",
+    "build": "parcel build",
+    "check": "tsc --noEmit",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "test": "jest",
+    "coverage": "jest --coverage --coverage-reporters html",
+    "watch:test": "jest --watchAll"
+  },
+```
