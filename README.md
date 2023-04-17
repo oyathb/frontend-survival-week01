@@ -81,7 +81,40 @@ npm i -D eslint
 npx eslint --init
 ```
 ```
+Ok to proceed? (y)
 ```
+```
+? How would you like to use ESLint? …
+❯ To check syntax, find problems, and enforce code style
+
+? What type of modules does your project use? …
+❯ JavaScript modules (import/export)
+
+? Which framework does your project use? …
+❯ React
+
+? Does your project use TypeScript?
+› Yes
+
+? Where does your code run? …
+✔ Browser
+
+? How would you like to define a style for your project? …
+❯ Use a popular style guide
+
+? Which style guide do you want to follow? …
+❯ XO
+
+? What format do you want your config file to be in? …
+❯ JavaScript
+
+? Would you like to install them now?
+› Yes
+
+? Which package manager do you want to use? …
+❯ npm
+```
+
 
 3. `.eslintrc.js` 파일을 수정합니다.  
 아직 Jest를 설치하지 않았지만, 미리 설정합니다.
@@ -96,10 +129,18 @@ jest: true //추가
 
 
 ## React 설치하기
-React를 설치합니다.
+React를 설치합니다.  
+설치하는 동안 `package.json` 파일을 수정하면 안 됩니다.
 ```
 npm i react react-dom
 npm i -D @types/react @types/react-dom
+```
+설치가 완료 되면 `package.json` 파일에서 확인할 수 있습니다.
+```
+"dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 ```
 
 
