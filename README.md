@@ -1,11 +1,6 @@
-# frontend-survival-week01
-
-프론트엔드 생존코스 1주차 과제
-
-
-
 # 들어가기 전에
-### Visual Studio Code가 없는 경우 설치합니다.
+## Visual Studio Code 설치하기
+Visual Studio Code를 설치합니다.
 ```
 brew install visual-studio-code
 ```
