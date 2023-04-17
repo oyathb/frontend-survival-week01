@@ -4,32 +4,51 @@
 
 
 
-# 들어가기에 앞서
-본인 OS mac  
-visual studio code가 없는 경우 설치한다
+# 들어가기 전에
+### Visual Studio Code가 없는 경우 설치합니다.
 ```
 brew install visual-studio-code
 ```
+
+
+# JavaScript
+## Node.js 설치하기
+Node.js를 설치합니다.
+```
+brew install node.js
+```
+버전 확인하기
+```
+node -v
+```
+
+
 # TypeScript + React + ESLint + Jest + Parcel
-## 작업 폴더 준비
+## 작업 폴더 생성하기
+작업 폴더를 생성합니다.
 ```
 mkdir my-app
 cd my-app
 ```
 
-## npm 패키지 설치
-설치하면 package.json 생김
-```
-npm init //기본 명령어. 세부 설정 해줘야 함
-```
-```
-npm init -y //default값으로 바로 package.json 생성하겠다
-// -y는 yes의 의미
-```
 
-## .gitingore 파일 생성하기
+## npm 패키지 준비하기  
+npm 패키지를 설치하는 두 개의 명령어가 있습니다.
+* 기본 명령어입니다. 세부 설정을 해야 합니다.
+```
+npm init
+```
+* 세부 설정 없이 default값으로 바로 생성합니다.
+```
+npm init -y //-y는 yes의 의미
+```
+`package.json` 파일이 생성 됩니다.
+
+
+## .gitignore 파일 생성하기
 git에 업로드 되지 않아야 하는 파일입니다.  
-최소한 node_modules, dist 는 포함해야 합니다.  
+최소한 /node_modules/, /dist/ 는 포함해야 합니다.  
+***
 `.gitignore` 파일을 생성합니다.
 ```
 touch .gitignore
